@@ -1,11 +1,9 @@
 .contacts {
   margin: auto;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 80%;
   padding: 10px;
 }
-
-
 
 .icon {
     width: 2em;
@@ -14,18 +12,31 @@
 
 .skills {
   margin: auto;
+  margin-top: 5%;
   width: 80%;
   padding: 10px;
 }
 
 .certification {
   margin: auto;
+  margin-top: 5%;
   width: 80%;
   padding: 10px;
 }
 
 .education {
   margin: auto;
+  margin-top: 5%;
+  width: 80%;
+  padding: 10px;
+  font-size: 1.1em;
+  word-spacing: 0.1em;
+  line-height: 200%;
+}
+
+.interests {
+  margin: auto;
+  margin-top: 5%;
   width: 80%;
   padding: 10px;
   font-size: 1.1em;
@@ -38,9 +49,6 @@
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
-}
-
-#bottom_nav {
 }
 
 .introduction {
@@ -69,6 +77,7 @@
 
 .profile_summary {
     padding: 2%;
+    padding-right: 5%;
     margin-top: 2%;
 
 }
@@ -89,6 +98,7 @@
 
 .work_experience {
     padding: 2%;
+    padding-right: 5%;
     margin-top: 2%;
 }
 
@@ -114,32 +124,72 @@
     line-height: 200%;
     padding-bottom: 3%;
 }
+/*-- Outer div for progress bar */
+.progress {
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 70px;
+    width: 100%;
+    background-color: #D8D9CF;
 
+
+}
+/* Inner div for progress bar */
+.progress-bar {
+    width: 50%;
+    background-color: #51557E;
+    height: 25px;
+}
+
+
+#footer {
+height: 150px;
+background-color: #51557E;
+color: white;
+
+}
+
+#navbar {
+background-color: #51557E;
+color: white;
+}
 
 body {
 font-family: 'Roboto Condensed', sans-serif;
+background-image: url("../assets/beach4-silver-vig.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
 }
 
-hr.dashed {
+#left-col-wrapper {
+background-color: #FCF8E8;
+
 }
-<!--progress bar adjustment -->
-        /* For Firefox */
-        progress::-moz-progress-bar {
-            background: black;
-        }
 
-        /* For Chrome or Safari */
-        progress::-webkit-progress-value {
-            background: black;
-            width: 100%;
-            padding: -10%;
-        }
+#right-col-wrapper {
+background-color: #FCF8E8;
+}
 
-        /* For IE10 */
-        progress {
-            background: black;
-        }
 
-.progress_bar1 {
-<!-- TO DO -->
+#image-wrapper {
+position: relative;
+}
+
+#name-in-image {
+  width: 30%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 25%;
+  left: 55%;
+
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+#phone {
+padding-top: 18%;
 }

@@ -1,0 +1,4 @@
+        <div class="avatar">
+            <img alt="..." class="img-fluid img-thumbnail mx-auto" src="static/assets/me.jpeg">
+        </div>
+        <hr class="dashed">
