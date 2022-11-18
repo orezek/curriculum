@@ -153,8 +153,14 @@ color: white;
 background-color: #51557E;
 color: white;
 }
+html {
+  /* Add the blur effect */
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
 
 body {
+
 font-family: 'Roboto Condensed', sans-serif;
 background-image: url("../assets/beach4-silver-vig.jpeg");
 background-repeat: no-repeat;
@@ -192,4 +198,14 @@ a:hover, a:visited, a:link, a:active
 
 #phone {
 padding-top: 18%;
+}
+
+#btn {
+    color: black;
+    background-color: #FCF8E8;
+    border-color: #FCF8E8;
+
+#btn:link, #btn:visited, #btn:hover, #btn:active {
+    background-color: #FCF8E8;
+    border-color: #FCF8E8;
 }

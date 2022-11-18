@@ -16,7 +16,7 @@ skills = {"AWS Cloud": 80, "Windows Server": 82, "Networking": 75, "Python": 50,
 
 interests = ["Technology",
              "Blockchain",
-             "Finance"
+             "Finance",
              "Sport",
              "Photography",
              "History",
@@ -29,6 +29,12 @@ interests = ["Technology",
 def index():
     return render_template("resume.html", email=email, be_number=be_number,
                            cz_number=cz_number, name=name, greeting=greeting, interests=interests)
+
+
+@application.route("/about")
+def about():
+    title = "about"
+    return render_template("about.html", title=title)
 
 
 if __name__ == "__main__":
