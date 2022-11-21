@@ -31,11 +31,5 @@ def index():
                            cz_number=cz_number, name=name, greeting=greeting, interests=interests)
 
 
-@application.route("/about")
-def about():
-    title = "about"
-    return render_template("about.html", title=title)
-
-
 if __name__ == "__main__":
     application.run(debug=True, port=5001)
