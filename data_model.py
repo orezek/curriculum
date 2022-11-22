@@ -1,10 +1,12 @@
 import json
 from pprint import pprint
 
-website_headers = {"contacts": "Contacts", "skills": "Skills", "certifications": "Certifications",
-                   "education": "Education", "interests": "Interests", "profile_summary": "Profile Summary",
-                   "work_experience": "Work Experience"}
+# headers - metadata
+website_metadata = {"contacts": "Contacts", "skills": "Skills", "certifications": "Certifications",
+                    "education": "Education", "interests": "Interests", "profile_summary": "Profile Summary",
+                    "work_experience": "Work Experience"}
 
+# interests section
 interests = ["Technology",
              "Blockchain",
              "Finance",
@@ -15,11 +17,14 @@ interests = ["Technology",
              "Travelling",
              "Exploring"]
 
+# skills section along with competency score
 skills = {"AWS Cloud": 80, "Windows Server": 82, "Networking": 75, "Python": 50, "HTML": 55, "Linux": 45,
           "Problem Solving": 90, "VM Ware": 70, "Veeam": 60}
 
+# job titles
 job_titles = ["System Administrator", "IT Manager", "Network Administrator"]
 
+# profile summary and basic info
 profile_summary_data_prod = """I have been in the IT industry for more than a decade and I had spent time 
 in various roles. I started in a support role back in 2008 and progressively moved on to more technically advanced 
 roles and subsequently landing into more managerial position. During the years, I have acquired “industry standard” 
@@ -129,5 +134,7 @@ user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rez
                            "Exploring"]
              }
 
-print(profile_summary_data_prod)
-print(type(profile_summary_data_prod))
+print(type(user_data))
+
+for key in user_data["work_experience"].keys():
+    print(key)

@@ -1,5 +1,6 @@
 from flask import Flask, render_template
-from data_model import website_headers, interests, skills, profile_summary_data_prod, job_titles
+from data_model import website_metadata, interests, skills, profile_summary_data_prod, job_titles, \
+    soitron_job_description_data, user_data
 
 application = Flask(__name__)
 
@@ -17,8 +18,8 @@ languages = ["English", "Czech"]
 def index():
     return render_template("resume.html", email=email, be_number=be_number,
                            cz_number=cz_number, name=name, greeting=greeting,
-                           interests=interests, website_headers=website_headers,
-                           profile_summary_data_prod=profile_summary_data_prod, job_titles=job_titles)
+                           interests=interests, website_metadata=website_metadata,
+                           profile_summary_data_prod=profile_summary_data_prod, user_data=user_data)
 
 
 if __name__ == "__main__":

@@ -29,7 +29,7 @@
     <div class="row flex-column-reverse flex-md-row">
         <div class="col-md-4" id="left-col-wrapper">
             <div class="contacts">
-                <h2>{{ website_headers["contacts"] }}</h2>
+                <h2>{{ website_metadata["contacts"] }}</h2>
                 <div class="table-responsive">
                     <table class="table table-borderless">
                         <tbody>
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="skills">
-                <h2>{{ website_headers["skills"] }}</h2>
+                <h2>{{ website_metadata["skills"] }}</h2>
                 <button onclick="skills()">Load Skills</button>
                 <button onclick="setWidth()">Reset Skills</button>
                 <div class="table-responsive">
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="certification">
-                <h2>{{ website_headers["certifications"] }}</h2>
+                <h2>{{ website_metadata["certifications"] }}</h2>
                 <table class="table table-borderless">
                     <tbody>
                     <tr>
@@ -183,11 +183,11 @@
                 </table>
             </div>
             <div class="education">
-                <h2>{{ website_headers["education"] }}</h2>
+                <h2>{{ website_metadata["education"] }}</h2>
                 <p>Mechanical engineer - Technical colleague Kolin, Czech Republic</p>
             </div>
             <div class="interests">
-                <h2>{{ website_headers["interests"] }}</h2>
+                <h2>{{ website_metadata["interests"] }}</h2>
                 <ul>
                     {% for interest in interests %}
                     <li>{{interest}}</li>
@@ -203,44 +203,17 @@
             </div>
             <hr class="dashed">
             <div class="profile_summary">
-                <h1 id="profile_header">{{ website_headers["profile_summary"] }}</h1>
+                <h1 id="profile_header">{{ website_metadata["profile_summary"] }}</h1>
                 <p id="profile_paragraph">{{ profile_summary_data_prod }}</p>
             </div>
             <hr class="dashed">
             <div class="work_experience">
-                <h1 id="work_ex_header">{{ website_headers["profile_summary"] }}</h1>
-                <h2 class="job_title">{{job_titles[0]}}</h2>
-                <h4 class="job_company">Soitron s.r.o - Brussels, Belgium - June 2022 - present</h4>
-                <p class="job_description">Maintaining and supporting IT infrastructure along with other office hardware
-                    and fleet of client computers across several offices in Brussels Belgium. I am part of a two-man
-                    team that are hired to completely outsource IT operations for a large international customer. We
-                    provide complete service from areas such as consultancy, server and network management and extensive
-                    client support.</p>
-                <h2 class="job_title">{{job_titles[1]}}</h2>
-                <h4 class="job_company">Zuri Zanzibar hotel and resort - Zanzibar - June 2019 - May 2022</h4>
-                <p class="job_description">Responsible for managing an IT department from managerial and technical
-                    perspective. My main duty was to ensure 24/7 smooth IT operations for both internal and external
-                    customers with strong emphasis on maintaining tight budget especially during the pandemic ara.
-                    I was leading a small team of local personnel with whom we performed most of the tasks ourselves
-                    with excellent results. The place due to its nature needed 24/7 attention, high speed and quality in
-                    execution was expected. The workload was very varied and rich, you
-                    were expected to handle tasks from financial planning, hiring and attendance to negotiation with
-                    vendors, communication with government agencies, sourcing and purchasing hardware to completely
-                    manage campus-like server, network and application infrastructure. The size of the property was 14
-                    acres and just to create a picture. There was around 220 active access points over 11km of optical
-                    cabling, over 350 employees or over 100 high profile paying clients. I am very happy to provide
-                    references and give you more details</p>
-                <h2 class="job_title">{{job_titles[2]}}</h2>
-                <h4 class="job_company">Velaa Private Island - Maldives - October 2018 - May 2019</h4>
-                <p class="job_description">Maintaining and supporting large network, server infrastructure, applications
-                    and end-client devices on a secluded private island in the Maldives for top 1% net worth
-                    individuals. Very demanding working environment with various tasks and projects usually with
-                    fast resolution times.
-                    References upon request.</p>
-                <h2 class="job_title">{{job_titles[0]}}</h2>
-                <h4 class="job_company">Olympus sro - Prague Czech Republic - April 2016 - September 2018</h4>
-                <p class="job_description">Responsible for maintaining Microsoft Sharepoint 2013 and 2016 server farm
-                    and building business applications and workflows for internal clients.</p>
+                <h1 id="work_ex_header">{{ website_metadata["work_experience"] }}</h1>
+                {% for key in user_data["work_experience"].keys() %}
+                <h2 class="job_title">{{user_data["work_experience"][key]["job_title"]}}</h2>
+                <h4 class="job_company">{{user_data["work_experience"][key]["job_company"]}}</h4>
+                <p class="job_description">{{user_data["work_experience"][key]["job_description"]}}</p>
+                {% endfor %}
             </div>
         </div>
     </div>
