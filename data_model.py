@@ -1,11 +1,21 @@
 import json
 from pprint import pprint
 
+# PAGE DATA and METADATA
 # headers - metadata
 website_metadata = {"contacts": "Contacts", "skills": "Skills", "certifications": "Certifications",
                     "education": "Education", "interests": "Interests", "profile_summary": "Profile Summary",
                     "work_experience": "Work Experience"}
 
+# info about the page as a project
+footer_metadata = ""
+
+# text for the navbar
+navbar_metadata = ""
+
+# USER DATA SECTION
+
+personal_mini_header = "Cloud Engineer, Developer and Technology Enthusiast"
 # interests section
 interests = ["Technology",
              "Blockchain",
@@ -22,7 +32,7 @@ skills = {"AWS Cloud": 80, "Windows Server": 82, "Networking": 75, "Python": 50,
           "Problem Solving": 90, "VM Ware": 70, "Veeam": 60}
 
 # job titles
-job_titles = ["System Administrator", "IT Manager", "Network Administrator"]
+job_titles = {"sys_admin": "System Administrator", "it_man": "IT Manager", "net_admin": "Network Administrator"}
 
 # profile summary and basic info
 profile_summary_data_prod = """I have been in the IT industry for more than a decade and I had spent time 
@@ -96,6 +106,14 @@ working environment with various tasks and projects usually with fast resolution
 olympus_job_description_data = """Responsible for maintaining Microsoft Sharepoint 2013 and 2016 server farm and 
 building business applications and workflows for internal clients. """
 
+# links to social media and aws certifications
+linkedin_link = "https://www.linkedin.com/in/oldrich-rezek-175503229/"
+github_link = "https://github.com/orezek"
+
+aws_dev_link = "https://www.credly.com/badges/56210d28-1b2e-4835-acbd-a71978577fb9/public_url"
+aws_arch_link = "https://www.credly.com/badges/e247032c-7f99-45a1-84b4-0a0760de2808/public_url"
+aws_fond_link = "https://www.credly.com/badges/9c64e8d6-4632-41b6-aa12-29c521802fb6/public_url"
+
 user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rezek"},
                            "user_bio": {"dob": "02051984", "age": "38", "nationality": "czech",
                                         "place_of_birth": "trinec",
@@ -104,37 +122,32 @@ user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rez
                                             "postal_code": "1000",
                                             "country": "belgium"},
                            "user_contacts": {"email": "orezek@seznam.cz", "phone_no": "+420608840502",
-                                             "linkedin": "data", "github": "data"}},
+                                             "linkedin": linkedin_link, "github": github_link}},
+             "user_miscellaneous": {"languages": {"czech": "Czech", "english": "English"},
+                                    "whoami": personal_mini_header,
+                                    "greeting": "Hey, I'm"},
              "profile_info": {"profile_summary": profile_summary_data_prod},
-             "work_experience": {"soitron": {"job_title": job_titles[0],
+             "work_experience": {"soitron": {"job_title": job_titles["sys_admin"],
                                              "job_company": "Soitron s.r.o - Brussels, Belgium - June 2022 - present",
                                              "job_description": soitron_job_description_data},
-                                 "zuri": {"job_title": job_titles[1],
+                                 "zuri": {"job_title": job_titles["it_man"],
                                           "job_company": "Zuri Zanzibar hotel and resort - Zanzibar - June 2019 - May "
                                                          "2022", "job_description": zuri_job_description_data},
-                                 "velaa": {"job_title": job_titles[2],
+                                 "velaa": {"job_title": job_titles["net_admin"],
                                            "job_company": "Velaa Private Island - Maldives - October 2018 - May 2019",
                                            "job_description": velaa_job_description_data},
-                                 "olympus": {"job_title": job_titles[0], "job_company": "Olympus sro - Prague Czech "
-                                                                                        "Republic - April 2016 - "
-                                                                                        "September 2018",
+                                 "olympus": {"job_title": job_titles["sys_admin"],
+                                             "job_company": "Olympus sro - Prague Czech "
+                                                            "Republic - April 2016 - "
+                                                            "September 2018",
                                              "job_description": olympus_job_description_data}},
              "skills": {"AWS Cloud": 80, "Windows Server": 82, "Networking": 75, "Python": 50, "HTML": 55, "Linux": 45,
                         "Problem Solving": 90, "VM Ware": 70, "Veeam": 60},
-             "certification": {"cert1": "data", "cert2": "data"},
-             "education": {"institution": "data"},
-             "interests": ["Technology",
-                           "Blockchain",
-                           "Finance",
-                           "Sport",
-                           "Photography",
-                           "History",
-                           "Philosophy",
-                           "Travelling",
-                           "Exploring"]
+             "certification": {"aws_dev": aws_dev_link, "aws_arch": aws_arch_link, "aws_fond": aws_fond_link},
+             "education": {"institution": "Technical colleague Kolin, Czech Republic",
+                           "field": "Mechanical engineering"},
+             "interests": interests
              }
-
-print(type(user_data))
 
 for key in user_data["work_experience"].keys():
     print(key)

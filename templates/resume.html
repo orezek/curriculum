@@ -184,7 +184,7 @@
             </div>
             <div class="education">
                 <h2>{{ website_metadata["education"] }}</h2>
-                <p>Mechanical engineer - Technical colleague Kolin, Czech Republic</p>
+                <p>{{ user_data["education"]["field"] }} - {{user_data["education"]["institution"]}}</p>
             </div>
             <div class="interests">
                 <h2>{{ website_metadata["interests"] }}</h2>
@@ -197,9 +197,14 @@
         </div>
         <div class="col-md-8" id="right-col-wrapper">
             <div class="introduction">
-                <h2 id="principal_about">Cloud Engineer, Developer and Technology Enthusiast</h2>
+                <h2 id="principal_about">{{user_data["user_miscellaneous"]["whoami"]}}</h2>
                 <hr class="dashed>">
-                <h4 id="principal_bio">Age:38 | Nationality:Czech | Languages:English, Czech</h4>
+                <h4 id="principal_bio">
+                    Age:{{ user_data["user_info"]["user_bio"]["age"]}} |
+                    Nationality: {{ user_data["user_info"]["user_bio"]["nationality"] | capitalize}} |
+                    Languages: {{ user_data["user_miscellaneous"]["languages"]["czech"] | capitalize}},
+                    {{ user_data["user_miscellaneous"]["languages"]["english"] | capitalize}}
+                </h4>
             </div>
             <hr class="dashed">
             <div class="profile_summary">
