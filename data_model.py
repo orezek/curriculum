@@ -5,7 +5,7 @@ from pprint import pprint
 # headers - metadata
 website_metadata = {"contacts": "Contacts", "skills": "Skills", "certifications": "Certifications",
                     "education": "Education", "interests": "Interests", "profile_summary": "Profile Summary",
-                    "work_experience": "Work Experience"}
+                    "work_experience": "Work Experience", "linkedin": "LinkedIn", "github": "Github"}
 
 # info about the page as a project
 footer_metadata = ""
@@ -16,6 +16,7 @@ navbar_metadata = ""
 # USER DATA SECTION
 
 personal_mini_header = "Cloud Engineer, Developer and Technology Enthusiast"
+
 # interests section
 interests = ["Technology",
              "Blockchain",
@@ -121,7 +122,8 @@ user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rez
                            "user_address": {"street": "quai au foin", "house_no": "41", "city": "brussels",
                                             "postal_code": "1000",
                                             "country": "belgium"},
-                           "user_contacts": {"email": "orezek@seznam.cz", "phone_no": "+420608840502",
+                           "user_contacts": {"email": "orezek@seznam.cz", "phone_no_cz": "+420 608 840 502",
+                                             "phone_no_be": "+320 497 127 267",
                                              "linkedin": linkedin_link, "github": github_link}},
              "user_miscellaneous": {"languages": {"czech": "Czech", "english": "English"},
                                     "whoami": personal_mini_header,

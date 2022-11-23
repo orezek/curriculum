@@ -17,8 +17,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="name-in-image">
-                        <h4>{{greeting}}</h4>
-                        <h1>{{name}}</h1>
+                        <h4>{{user_data["user_miscellaneous"]["greeting"]}}</h4>
+                        <h1>{{user_data["user_info"]["user_full_name"]["name"]}}
+                            {{user_data["user_info"]["user_full_name"]["surname"]}}
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -36,26 +38,28 @@
                         <tr>
                             <td scope="col"><img alt="phone" class="icon" class="img-fluid img-thumbnail" id="phone"
                                                  src="./static/assets/telephone.png"></td>
-                            <td scope="col"><p><b><kbd>{{cz_number}}</kbd></b><br><b><kbd>{{be_number}}</kbd></b></br>
+                            <td scope="col"><p><b><kbd>{{user_data["user_info"]["user_contacts"]["phone_no_cz"]}}</kbd></b>
+                                <br><b><kbd>{{user_data["user_info"]["user_contacts"]["phone_no_be"]}}</kbd></b></br>
                             </p>
                         </tr>
                         <tr>
-                            <td scope="col"><a href="mailto:orezek@seznam.cz"><img alt="email" class="icon"
+                            <td scope="col"><a href="mailto:{{user_data['user_info']['user_contacts']['email']}}"><img alt="email" class="icon"
                                                                                    class="img-fluid img-thumbnail mx-auto"
                                                                                    id="email"
                                                                                    src="./static/assets/email.png"></a>
                             </td>
-                            <td scope="col"><a href="mailto:orezek@seznam.cz"><p><b><kbd>{{email}}</kbd></b></b>
+                            <td scope="col"><a href="mailto:{{user_data['user_info']['user_contacts']['email']}}"><p><b><kbd>
+                                {{user_data["user_info"]["user_contacts"]["email"]}}</kbd></b></b>
                             </p></a></td>
                         </tr>
                         <tr>
-                            <td scope="col"><a href="https://www.linkedin.com/in/oldrich-rezek-175503229/"
+                            <td scope="col"><a href="{{user_data['user_info']['user_contacts']['linkedin']}}"
                                                target=”_blank”><img
                                     alt="linkedin" class="icon" class="img-fluid img-thumbnail mx-auto"
                                     id="linkedin" src="./static/assets/linkedin.png"></a>
                             </td>
-                            <td scope="col"><a href="https://www.linkedin.com/in/oldrich-rezek-175503229/"
-                                               target=”_blank”><p><b><kbd>LinkedIn</kbd></b>
+                            <td scope="col"><a href="{{user_data['user_info']['user_contacts']['linkedin']}}"
+                                               target=”_blank”><p><b><kbd>{{ website_metadata["linkedin"] }}</kbd></b>
                             </p></a></td>
                         </tr>
                         <tr>
@@ -65,7 +69,7 @@
                                                                                    id="github"
                                                                                    src="./static/assets/github.png"></a>
                             </td>
-                            <td scope="col"><a href="https://github.com/orezek" target=”_blank”><p><b><kbd>Github</kbd></b>
+                            <td scope="col"><a href="https://github.com/orezek" target=”_blank”><p><b><kbd>{{ website_metadata["github"] }}</kbd></b>
                             </p></a></td>
                         </tr>
                         </tbody>
@@ -161,19 +165,19 @@
                     <tbody>
                     <tr>
                         <td scope="col"><a
-                                href="https://www.credly.com/badges/56210d28-1b2e-4835-acbd-a71978577fb9/public_url"><img
+                                href="{{user_data['certification']['aws_dev']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
                                 src="./static/assets/aws-certified-developer-associate.png"></a></td>
                         <td scope="col"><a
-                                href="https://www.credly.com/badges/e247032c-7f99-45a1-84b4-0a0760de2808/public_url"><img
+                                href="{{user_data['certification']['aws_arch']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
                                 src="./static/assets/aws-certified-solutions-architect-associate.png"></a></td>
                     </tr>
                     <tr>
                         <td scope="col"><a
-                                href="https://www.credly.com/badges/9c64e8d6-4632-41b6-aa12-29c521802fb6/public_url"><img
+                                href="{{user_data['certification']['aws_fond']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
                                 id="aws-badge-dev" src="static/assets/aws-certified-cloud-practitioner.png"></a>
@@ -189,7 +193,7 @@
             <div class="interests">
                 <h2>{{ website_metadata["interests"] }}</h2>
                 <ul>
-                    {% for interest in interests %}
+                    {% for interest in user_data["interests"] %}
                     <li>{{interest}}</li>
                     {% endfor %}
                 </ul>
@@ -209,7 +213,7 @@
             <hr class="dashed">
             <div class="profile_summary">
                 <h1 id="profile_header">{{ website_metadata["profile_summary"] }}</h1>
-                <p id="profile_paragraph">{{ profile_summary_data_prod }}</p>
+                <p id="profile_paragraph">{{ user_data["profile_info"]["profile_summary"] }}</p>
             </div>
             <hr class="dashed">
             <div class="work_experience">
