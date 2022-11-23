@@ -168,19 +168,19 @@
                                 href="{{user_data['certification']['aws_dev']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
-                                src="./static/assets/aws-certified-developer-associate.png"></a></td>
+                                src="{{url_for('static', filename='assets/aws-certified-developer-associate.png')}}"></a></td>
                         <td scope="col"><a
                                 href="{{user_data['certification']['aws_arch']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
-                                src="./static/assets/aws-certified-solutions-architect-associate.png"></a></td>
+                                src="{{url_for('static', filename='assets/aws-certified-solutions-architect-associate.png')}}"></a></td>
                     </tr>
                     <tr>
                         <td scope="col"><a
                                 href="{{user_data['certification']['aws_fond']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
-                                id="aws-badge-dev" src="static/assets/aws-certified-cloud-practitioner.png"></a>
+                                id="aws-badge-dev" src="{{url_for('static', filename='assets/aws-certified-cloud-practitioner.png')}}"></a>
                         </td>
                     </tr>
                     </tbody>
