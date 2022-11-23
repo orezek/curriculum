@@ -37,16 +37,17 @@
                         <tbody>
                         <tr>
                             <td scope="col"><img alt="phone" class="icon" class="img-fluid img-thumbnail" id="phone"
-                                                 src="./static/assets/telephone.png"></td>
+                                                 src="{{url_for('static', filename='assets/telephone.png')}}"></td>
                             <td scope="col"><p><b><kbd>{{user_data["user_info"]["user_contacts"]["phone_no_cz"]}}</kbd></b>
                                 <br><b><kbd>{{user_data["user_info"]["user_contacts"]["phone_no_be"]}}</kbd></b></br>
                             </p>
                         </tr>
                         <tr>
-                            <td scope="col"><a href="mailto:{{user_data['user_info']['user_contacts']['email']}}"><img alt="email" class="icon"
-                                                                                   class="img-fluid img-thumbnail mx-auto"
-                                                                                   id="email"
-                                                                                   src="./static/assets/email.png"></a>
+                            <td scope="col"><a href="mailto:{{user_data['user_info']['user_contacts']['email']}}"><img
+                                    alt="email" class="icon"
+                                    class="img-fluid img-thumbnail mx-auto"
+                                    id="email"
+                                    src="{{url_for('static', filename='assets/email.png')}}"></a>
                             </td>
                             <td scope="col"><a href="mailto:{{user_data['user_info']['user_contacts']['email']}}"><p><b><kbd>
                                 {{user_data["user_info"]["user_contacts"]["email"]}}</kbd></b></b>
@@ -56,7 +57,7 @@
                             <td scope="col"><a href="{{user_data['user_info']['user_contacts']['linkedin']}}"
                                                target=”_blank”><img
                                     alt="linkedin" class="icon" class="img-fluid img-thumbnail mx-auto"
-                                    id="linkedin" src="./static/assets/linkedin.png"></a>
+                                    id="linkedin" src="{{url_for('static', filename='assets/linkedin.png')}}"></a>
                             </td>
                             <td scope="col"><a href="{{user_data['user_info']['user_contacts']['linkedin']}}"
                                                target=”_blank”><p><b><kbd>{{ website_metadata["linkedin"] }}</kbd></b>
@@ -64,12 +65,14 @@
                         </tr>
                         <tr>
                             <td scope="col">
-                                <a href="https://github.com/" target=”_blank”><img alt="github" class="icon"
-                                                                                   class="img-fluid img-thumbnail mx-auto"
-                                                                                   id="github"
-                                                                                   src="./static/assets/github.png"></a>
+                                <a href="{{user_data['user_info']['user_contacts']['github']}}" target=”_blank”><img
+                                        alt="github" class="icon"
+                                        class="img-fluid img-thumbnail mx-auto"
+                                        id="github"
+                                        src="{{ url_for('static', filename='assets/github.png')}}"></a>
                             </td>
-                            <td scope="col"><a href="https://github.com/orezek" target=”_blank”><p><b><kbd>{{ website_metadata["github"] }}</kbd></b>
+                            <td scope="col"><a href="{{user_data['user_info']['user_contacts']['github']}}" target=”_blank”><p><b><kbd>{{
+                                website_metadata["github"] }}</kbd></b>
                             </p></a></td>
                         </tr>
                         </tbody>
@@ -168,19 +171,22 @@
                                 href="{{user_data['certification']['aws_dev']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
-                                src="{{url_for('static', filename='assets/aws-certified-developer-associate.png')}}"></a></td>
+                                src="{{url_for('static', filename='assets/aws-certified-developer-associate.png')}}"></a>
+                        </td>
                         <td scope="col"><a
                                 href="{{user_data['certification']['aws_arch']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
-                                src="{{url_for('static', filename='assets/aws-certified-solutions-architect-associate.png')}}"></a></td>
+                                src="{{url_for('static', filename='assets/aws-certified-solutions-architect-associate.png')}}"></a>
+                        </td>
                     </tr>
                     <tr>
                         <td scope="col"><a
                                 href="{{user_data['certification']['aws_fond']}}"><img
                                 alt="..."
                                 class="img-fluid img thumbnail mx-auto"
-                                id="aws-badge-dev" src="{{url_for('static', filename='assets/aws-certified-cloud-practitioner.png')}}"></a>
+                                id="aws-badge-dev"
+                                src="{{url_for('static', filename='assets/aws-certified-cloud-practitioner.png')}}"></a>
                         </td>
                     </tr>
                     </tbody>
