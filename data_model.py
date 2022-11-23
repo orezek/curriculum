@@ -31,13 +31,13 @@ interests = ["Technology",
 # skills section along with competency score
 skills = {"AWS Cloud": 80,
           "Windows Server": 82,
+          "MS Sharepoint": 60,
           "Networking": 75,
-          "Python": 50,
-          "HTML": 55,
           "Linux": 45,
-          "Sharepoint": 60,
           "VM Ware": 70,
           "Veeam": 60,
+          "Python": 50,
+          "HTML": 55,
           "Problem Solving": 90, }
 
 # job titles

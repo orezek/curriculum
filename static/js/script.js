@@ -1,9 +1,7 @@
 
-
-
 // progress bar setter - sets width to zero
 function setWidth() {
-    for (const x of bar_elements) {
+    for (const x of skill_bar_elements) {
         document.getElementById(x).style.width = "0%"
     }
 }
@@ -31,10 +29,11 @@ function move(element, limit) {
 
 // progress bar id's to fill
 const skill_bar_elements = ["AWS Cloud", "Windows Server", "Networking",
-"Python", "HTML", "Linux", "Problem Solving", "VM Ware", "Veeam", "Sharepoint"];
+"Python", "HTML", "Linux", "Problem Solving", "VM Ware", "Veeam", "MS Sharepoint"];
 
 // fills the progress bar for each skill list element
 function skills(elements) {
+// note "elements" parameter should be used in the "for" loop instead of "skill_bar_elements" parameter
     for (const x of skill_bar_elements) {
       if (x == "AWS Cloud") {
         const aws = 70;
@@ -65,14 +64,14 @@ function skills(elements) {
         move(x, problem)
         console.log(move(x, problem), x)
       } else if (x == "VM Ware") {
-        const skill = 83;
+        const skill = 63;
         move(x, skill)
         console.log(move(x, skill), x)
       } else if (x == "Veeam") {
-        const skill = 80;
+        const skill = 40;
         move(x, skill)
         console.log(move(x, skill), x)
-      } else if (x == "Sharepoint") {
+      } else if (x == "MS Sharepoint") {
         const skill = 60;
         move(x, skill)
         console.log(move(x, skill), x)
