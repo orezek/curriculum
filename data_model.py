@@ -29,8 +29,16 @@ interests = ["Technology",
              "Exploring"]
 
 # skills section along with competency score
-skills = {"AWS Cloud": 80, "Windows Server": 82, "Networking": 75, "Python": 50, "HTML": 55, "Linux": 45,
-          "Problem Solving": 90, "VM Ware": 70, "Veeam": 60}
+skills = {"AWS Cloud": 80,
+          "Windows Server": 82,
+          "Networking": 75,
+          "Python": 50,
+          "HTML": 55,
+          "Linux": 45,
+          "Sharepoint": 60,
+          "VM Ware": 70,
+          "Veeam": 60,
+          "Problem Solving": 90, }
 
 # job titles
 job_titles = {"sys_admin": "System Administrator", "it_man": "IT Manager", "net_admin": "Network Administrator"}

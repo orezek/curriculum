@@ -28,8 +28,10 @@
         </div>
     </div>
     <!---------end of image wrapper------>
+    <!-- left column -->
     <div class="row flex-column-reverse flex-md-row">
         <div class="col-md-4" id="left-col-wrapper">
+            <!-- contacts section -->
             <div class="contacts">
                 <h2>{{ website_metadata["contacts"] }}</h2>
                 <div class="table-responsive">
@@ -79,8 +81,10 @@
                     </table>
                 </div>
             </div>
+            <!-- skills section -->
             <div class="skills">
                 <h2>{{ website_metadata["skills"] }}</h2>
+                <!-- temp buttons to reset and load skill values -->
                 <button onclick="skills()">Load Skills</button>
                 <button onclick="setWidth()">Reset Skills</button>
                 <div class="table-responsive">
@@ -100,6 +104,7 @@
                     </table>
                 </div>
             </div>
+            <!-- certification section -->
             <div class="certification">
                 <h2>{{ website_metadata["certifications"] }}</h2>
                 <table class="table table-borderless">
@@ -130,10 +135,12 @@
                     </tbody>
                 </table>
             </div>
+            <!-- education section -->
             <div class="education">
                 <h2>{{ website_metadata["education"] }}</h2>
                 <p>{{ user_data["education"]["field"] }} - {{user_data["education"]["institution"]}}</p>
             </div>
+            <!-- interests section -->
             <div class="interests">
                 <h2>{{ website_metadata["interests"] }}</h2>
                 <ul>
@@ -143,6 +150,8 @@
                 </ul>
             </div>
         </div>
+        <!-- right column -->
+        <!-- user introduction section -->
         <div class="col-md-8" id="right-col-wrapper">
             <div class="introduction">
                 <h2 id="principal_about">{{user_data["user_miscellaneous"]["whoami"]}}</h2>
@@ -154,11 +163,13 @@
                     {{ user_data["user_miscellaneous"]["languages"]["english"] | capitalize}}
                 </h4>
             </div>
+            <!-- profile summary section -->
             <hr class="dashed">
             <div class="profile_summary">
                 <h1 id="profile_header">{{ website_metadata["profile_summary"] }}</h1>
                 <p id="profile_paragraph">{{ user_data["profile_info"]["profile_summary"] }}</p>
             </div>
+            <!-- work experience section -->
             <hr class="dashed">
             <div class="work_experience">
                 <h1 id="work_ex_header">{{ website_metadata["work_experience"] }}</h1>

@@ -29,7 +29,7 @@ function move(element, limit) {
 
 // progress bar id's to fill
 const bar_elements = ["AWS Cloud", "Windows Server", "Networking",
-"Python", "HTML", "Linux", "Problem Solving", "VM Ware", "Veeam"];
+"Python", "HTML", "Linux", "Problem Solving", "VM Ware", "Veeam", "Sharepoint"];
 
 // fills the progress bar for each skill list element
 function skills(elements) {
@@ -68,6 +68,10 @@ function skills(elements) {
         console.log(move(x, skill), x)
       } else if (x == "Veeam") {
         const skill = 80;
+        move(x, skill)
+        console.log(move(x, skill), x)
+      } else if (x == "Sharepoint") {
+        const skill = 60;
         move(x, skill)
         console.log(move(x, skill), x)
         }
