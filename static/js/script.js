@@ -1,4 +1,6 @@
 
+
+
 // progress bar setter - sets width to zero
 function setWidth() {
     for (const x of bar_elements) {
@@ -28,12 +30,12 @@ function move(element, limit) {
 }
 
 // progress bar id's to fill
-const bar_elements = ["AWS Cloud", "Windows Server", "Networking",
+const skill_bar_elements = ["AWS Cloud", "Windows Server", "Networking",
 "Python", "HTML", "Linux", "Problem Solving", "VM Ware", "Veeam", "Sharepoint"];
 
 // fills the progress bar for each skill list element
 function skills(elements) {
-    for (const x of bar_elements) {
+    for (const x of skill_bar_elements) {
       if (x == "AWS Cloud") {
         const aws = 70;
         move(x, aws)
@@ -79,4 +81,4 @@ function skills(elements) {
 }
 
 // run skill function on every page load
-skills(bar_elements)
+skills(skill_bar_elements)
