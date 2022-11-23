@@ -40,7 +40,7 @@ profile_summary_data_prod = """I have been in the IT industry for more than a de
 in various roles. I started in a support role back in 2008 and progressively moved on to more technically advanced 
 roles and subsequently landing into more managerial position. During the years, I have acquired “industry standard” 
 skills as I was exposed to various products from the industry household names and infrastructure environments. VM 
-Ware, Veeam, Microsoft & Linux, Cisco, Aruba Ubiquity, Ruckus, Oracle and other software or hardware products to name 
+Ware, Veeam, Microsoft, Cisco, Aruba Ubiquity, Ruckus, Oracle and other software or hardware products to name 
 a few. However, as technology and approach to the IT is evolving so is my current interest. I have been lately 
 focused on cloud technologies and modern DevOps and SysOps approach to the IT discipline especially from the AWS 
 offerings. I am aware that the current trend in IT operations is moving fast into automation and knowing how to 
@@ -51,7 +51,7 @@ into the DevOps and SysOps world as I was in environments that embraced the olde
 career in progress and ensure that I have some minimal knowledge, I have recently passed, number of cloud 
 certifications and working on few more to solidify my skill set. Lately I have returned to the EU and I am looking 
 for an opportunity to work on an interesting project either in a full-time position or in a freelance role. The ideal 
-that I am most interested is a company that already have embraced or is in the process of moving into automation, 
+that I am most interested is a company that already have embraced or is in the process of moving into cloud, automation, 
 DevOps and SysOps operations and creates an interesting product."""
 
 profile_summary_data_v1 = """I am an experienced system and network administrator who is passionate about technology in 
@@ -143,8 +143,7 @@ user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rez
                                                             "Republic - April 2016 - "
                                                             "September 2018",
                                              "job_description": olympus_job_description_data}},
-             "skills": {"AWS Cloud": 80, "Windows Server": 82, "Networking": 75, "Python": 50, "HTML": 55, "Linux": 45,
-                        "Problem Solving": 90, "VM Ware": 70, "Veeam": 60},
+             "skills": skills,
              "certification": {"aws_dev": aws_dev_link, "aws_arch": aws_arch_link, "aws_fond": aws_fond_link},
              "education": {"institution": "Technical colleague Kolin, Czech Republic",
                            "field": "Mechanical engineering"},

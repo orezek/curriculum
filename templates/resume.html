@@ -86,78 +86,16 @@
                 <div class="table-responsive">
                     <table class="table table-borderless">
                         <tbody>
+                        {% for key, value in user_data["skills"].items()%}
                         <tr>
-                            <td scope="col"><label for="prg-outer1"><kbd>AWS Cloud</kbd></label></td>
+                            <td scope="col"><label for="prg-outer{{value}}"><kbd>{{ key }}</kbd></label></td>
                             <td scope="col">
-                                <div class="progress" id="prg-outer1">
-                                    <div class="progress-bar" id="AWS Cloud"></div>
+                                <div class="progress" id="prg-outer{{value}}">
+                                    <div class="progress-bar" id="{{ key }}"></div>
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer2"><kbd>Windows Server</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer2">
-                                    <div class="progress-bar" id="Windows Server"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer3"><kbd>Networking</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer3">
-                                    <div class="progress-bar" id="Networking"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer4"><kbd>Python</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer4">
-                                    <div class="progress-bar" id="Python"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer5"><kbd>HTML, CSS & Bootstrap</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer5">
-                                    <div class="progress-bar" id="HTML"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer6"><kbd>Linux</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer6">
-                                    <div class="progress-bar" id="Linux"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer8"><kbd>VM Ware</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer8">
-                                    <div class="progress-bar" id="VM Ware"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer9"><kbd>Veeam</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer9">
-                                    <div class="progress-bar" id="Veeam"></div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col"><label for="prg-outer7"><kbd>Problem Solving</kbd></label></td>
-                            <td scope="col">
-                                <div class="progress" id="prg-outer7">
-                                    <div class="progress-bar" id="Problem Solving"></div>
-                                </div>
-                            </td>
-                        </tr>
+                        {% endfor %}
                         </tbody>
                     </table>
                 </div>
