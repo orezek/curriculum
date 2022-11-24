@@ -8,7 +8,12 @@ website_metadata = {"contacts": "Contacts", "skills": "Skills", "certifications"
                     "work_experience": "Work Experience", "linkedin": "LinkedIn", "github": "Github"}
 
 # info about the page as a project
-footer_metadata = ""
+footer_about_info = """The page is made up of standard HTML, CSS, some Javascript 
+code. However, it is a Flask application and runs fully on AWS Elastic Beansltalk. The components used are; simple 
+EC2 instance along with ELB in front of it, DynamoDB as its backend, S3 for media storage, Route53 for DNS and domain 
+name registration. I am also utilising AWS CodePipeline to automate deployment when the repo in GitHub gets updated. """
+
+footer_data = {"footer_about_info": footer_about_info}
 
 # text for the navbar
 navbar_metadata = ""
@@ -157,6 +162,3 @@ user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rez
                            "field": "Mechanical engineering"},
              "interests": interests
              }
-
-for key in user_data["work_experience"].keys():
-    print(key)

@@ -30,6 +30,9 @@
                 <a class="navbar-brand" href="#">
                     <button class="btn btn-primary" id="btn" type="button">O.R</button>
                 </a>
+                <a class="navbar-brand" href="https://aws.amazon.com/what-is-cloud-computing"><img
+                        alt="Powered by AWS Cloud Computing"
+                        src="https://d0.awsstatic.com/logos/powered-by-aws-white.png"></a>
             </div>
         </nav>
     </div>
@@ -44,11 +47,7 @@
     <div class="main-footer">
         <div class="container">
             <div class="row" id="footer">
-                <p>You can see the page source code <a href="#">here.</a>The page is made up of standard HTML, CSS, some
-                    Javascript code. However, it is a Flask application and runs fully on AWS Elastic Beansltalk. The
-                    components used are; simple EC2 instance along with ELB in front of it, DynamoDB as its backend, S3
-                    for media storage, Route53 for DNS and domain name registration. I am also utilising AWS
-                    CodePipeline to automate deployment when the repo in GitHub gets updated. </p>
+                <p>{{ footer_data["footer_about_info"] }} </p>
             </div>
         </div>
     </div>
