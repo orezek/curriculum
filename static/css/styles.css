@@ -165,7 +165,7 @@ font-family: 'Roboto Condensed', sans-serif;
 background-image: url("../assets/beach4-silver-vig.jpeg");
 background-repeat: no-repeat;
 background-size: cover;
-background-position: 50% 50%;
+background-position: center;
 }
 
 #left-col-wrapper {
