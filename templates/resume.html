@@ -4,7 +4,7 @@
 {{name}}
 {% endblock %}
 
-{% block body %}
+{% block main %}
 
 
 <!-- main container wrapper -->
@@ -166,7 +166,7 @@
             <!-- profile summary section -->
             <hr class="dashed">
             <div class="profile_summary">
-                <h1 id="profile_header">{{ website_metadata["profile_summary"] }}</h1>
+                <h1 id="profile_header">{{ website_metadata["about_me"] }}</h1>
                 <p id="profile_paragraph">{{ user_data["profile_info"]["profile_summary"] }}</p>
             </div>
             <!-- work experience section -->
