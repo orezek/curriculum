@@ -45,7 +45,6 @@
 }
 
 
-
 .introduction {
     padding: 5%;
     text-align: center;
@@ -138,13 +137,14 @@
 
 
 #footer {
-height: 150px;
+height: 120px;
 background-color: #51557E;
 color: white;
 
 }
 
 #navbar {
+height: 50px;
 background-color: #51557E;
 color: white;
 }
