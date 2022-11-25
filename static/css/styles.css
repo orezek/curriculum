@@ -3,6 +3,7 @@
   margin-top: 10%;
   width: 80%;
   padding: 10px;
+  text-decoration: none;
 }
 
 .icon {
@@ -155,7 +156,6 @@ html {
 }
 
 body {
-
 font-family: 'Roboto Condensed', sans-serif;
 background-image: url("../assets/background.jpeg");
 background-repeat: no-repeat;
