@@ -41,7 +41,6 @@
                             <td scope="col"><img alt="phone" class="icon" class="img-fluid img-thumbnail" id="phone"
                                                  src="{{url_for('static', filename='assets/telephone.png')}}"></td>
                             <td scope="col"><p><b><kbd>{{user_data["user_info"]["user_contacts"]["phone_no_cz"]}}</kbd></b>
-                                <br><b><kbd>{{user_data["user_info"]["user_contacts"]["phone_no_be"]}}</kbd></b></br>
                             </p>
                         </tr>
                         <tr>
@@ -73,7 +72,8 @@
                                         id="github"
                                         src="{{ url_for('static', filename='assets/github.png')}}"></a>
                             </td>
-                            <td scope="col"><a href="{{user_data['user_info']['user_contacts']['github']}}" target=”_blank”><p><b><kbd>{{
+                            <td scope="col"><a href="{{user_data['user_info']['user_contacts']['github']}}"
+                                               target=”_blank”><p><b><kbd>{{
                                 website_metadata["github"] }}</kbd></b>
                             </p></a></td>
                         </tr>
