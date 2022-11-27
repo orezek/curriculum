@@ -58,15 +58,15 @@ Microsoft, Cisco, Aruba Ubiquity, Ruckus, Oracle and other software or hardware 
 as technology and approach to the IT is evolving so is my current interest. I have lately been focused on cloud 
 technologies and modern DevOps and SysOps approach to the IT discipline, especially from the AWS offerings. I am 
 aware that the current trend in IT operations is moving fast into automation and therefore knowing how to work with a 
-code is a necessity. Serverless, containers, cloud, CI/CD and git are not foreign buzzwords for me. Nevertheless, 
+code is a necessity. Serverless, containers, cloud, CI/CD and git are not foreign buzzwords for me. Having said that, 
 during the last 5 years, I was fortunate to had worked and lived in interesting places and experience firsthand what 
-others might read in adventure books. On the less bright side, I do not have much real-life exposure into the DevOps 
-and SysOps world as I was in environments that embraced the older way of “doing” IT. To keep my career in progress 
-and ensure that I have some minimal knowledge, I have recently passed, number of cloud certifications and working on 
-few more to solidify my skill set. Lately I have returned to the EU and I am looking for an opportunity to work on an 
-interesting project either in a full-time position or in a freelance role. The ideal, that I am most interested in, is a 
-company that already have embraced or is in the process of moving into cloud, automation, DevOps and SysOps 
-operations and creates an interesting product. """
+others might read in adventure books. On the less bright side, I have been absent from real-life exposure into the 
+DevOps and SysOps world as I was in environments that embraced the "older way of doing” IT. In order to keep my 
+career in touch with the current trends and ensure that I have some minimal knowledge, I have recently passed, 
+number of cloud certifications and working on few more to solidify my skill set. Recently I have returned to the EU and 
+I am looking for an opportunity to work on an interesting project either in a full-time position or in a freelance 
+role. The ideal, that I am most interested in, is a company that already have embraced or is in the process of moving 
+into cloud, automation, DevOps and SysOps operations and creates an interesting product that I can associate with."""
 
 profile_summary_data_v1 = """I am an experienced system and network administrator who is passionate about technology in 
 general. The last several years I have been living and working abroad. Either managing a whole IT department or 
