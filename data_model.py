@@ -63,10 +63,11 @@ during the last 5 years, I was fortunate to had worked and lived in interesting 
 others might read in adventure books. On the less bright side, I have been absent from real-life exposure into the 
 DevOps and SysOps world as I was in environments that embraced the "older way of doing” IT. In order to keep my 
 career in touch with the current trends and ensure that I have some minimal knowledge, I have recently passed, 
-number of cloud certifications and working on few more to solidify my skill set. Recently I have returned to the EU and 
-I am looking for an opportunity to work on an interesting project either in a full-time position or in a freelance 
-role. The ideal, that I am most interested in, is a company that already have embraced or is in the process of moving 
-into cloud, automation, DevOps and SysOps operations and creates an interesting product that I can associate with."""
+number of cloud certifications and working on few more to solidify my skill set. Recently I have returned to the EU 
+and I am looking for an opportunity to work on an interesting project either in a full-time position or as a 
+freelancer. The ideal, that I am most interested in, is a company that already have embraced or is in the process of 
+moving into cloud, automation, DevOps and SysOps operations and creates an interesting product that I can associate 
+with. """
 
 profile_summary_data_v1 = """I am an experienced system and network administrator who is passionate about technology in 
 general. The last several years I have been living and working abroad. Either managing a whole IT department or 
