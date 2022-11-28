@@ -124,7 +124,7 @@ building business applications and workflows for internal clients. """
 
 # links to social media and aws certifications
 linkedin_link = "https://www.linkedin.com/in/oldrich-rezek-175503229/"
-github_link = "https://github.com/orezek"
+github_link = "https://github.com/orezek/curriculum"
 
 aws_dev_link = "https://www.credly.com/badges/56210d28-1b2e-4835-acbd-a71978577fb9/public_url"
 aws_arch_link = "https://www.credly.com/badges/e247032c-7f99-45a1-84b4-0a0760de2808/public_url"
