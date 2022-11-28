@@ -100,7 +100,7 @@ already embraced or is in the process of moving into the cloud, DevOps and SysOp
 product. """
 
 soitron_job_description_data = """Maintaining and supporting IT infrastructure along with other office hardware and fleet of 
-client computers across several offices in Brussels Belgium. I am part of a two-man team that are hired to completely 
+client computers across several offices in Brussels Belgium. I am part of a two-man team that is hired to completely 
 outsource IT operations for a large international customer. We provide complete service from areas such as 
 consultancy, server and network management and extensive client support."""
 
