@@ -53,15 +53,17 @@ job_titles = {"sys_admin": "System Administrator", "it_man": "IT Manager", "net_
 profile_summary_data_prod = """I have been in the IT industry for more than a decade and I had spent time in various 
 roles. I started in a support role back in 2008 and progressively moved on to more technically advanced roles and 
 subsequently landing into more managerial position. During the years, I have acquired “industry standard” skills as I 
-was exposed to various products from the industry household names and infrastructure environments. VM Ware, Veeam, 
-Microsoft, Cisco, Aruba Ubiquity, Ruckus, Oracle and other software or hardware products to name a few. However, 
-as technology and approach to the IT is evolving so is my current interest. I have lately been focused on cloud 
-technologies and modern DevOps and SysOps approach to the IT discipline, especially from the AWS offerings. I am 
-aware that the current trend in IT operations is moving fast into automation and therefore knowing how to work with a 
-code is a necessity. Serverless, containers, cloud, CI/CD and git are not foreign buzzwords for me. Having said that, 
-during the last 5 years, I was fortunate to had worked and lived in interesting places and experience firsthand what 
-others might read in adventure books. On the less bright side, I have been absent from real-life exposure into the 
-DevOps and SysOps world as I was in environments that embraced the "older way of doing” IT. In order to keep my 
+was exposed to various products from the industry household names and infrastructure environments. <kbd>VM 
+Ware</kbd>, <kbd>Veeam</kbd>, <kbd>Microsoft</kbd>, <kbd>Cisco</kbd>, <kbd>Aruba</kbd>, <kbd>Ubiquity</kbd>, 
+<kbd>Ruckus</kbd>, <kbd>Oracle</kbd> and other software or hardware products to name a few. However, as technology 
+and approach to the IT is evolving so is my current interest. I have lately been focused on cloud technologies and 
+modern <kbd>DevOps</kbd> and <kbd>SysOps</kbd> approach to the IT discipline, especially from the <kbd>AWS</kbd> 
+offerings. I am aware that the current trend in IT operations is moving fast into automation and therefore knowing 
+how to work with a code is a necessity. <kbd>Serverless</kbd>, <kbd>containers</kbd>, <kbd>cloud</kbd>, 
+<kbd>CI/CD</kbd> and <kbd>git</kbd> are not foreign buzzwords for me. Having said that, during the last 5 years, 
+I was fortunate to had worked and lived in interesting places and experience firsthand what others might read in 
+adventure books. On the less bright side, I have been absent from real-life exposure into the <kbd>DevOps</kbd> and 
+<kbd>SysOps</kbd> world as I was in environments that embraced the "older way of doing” IT. In order to keep my 
 career in touch with the current trends and ensure that I have some minimal knowledge, I have recently passed, 
 number of cloud certifications and working on few more to solidify my skill set. Recently I have returned to the EU 
 and I am looking for an opportunity to work on an interesting project either in a full-time position or as a 

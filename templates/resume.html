@@ -167,7 +167,7 @@
             <hr class="dashed">
             <div class="profile_summary">
                 <h1 id="profile_header">{{ website_metadata["about_me"] }}</h1>
-                <p id="profile_paragraph">{{ user_data["profile_info"]["profile_summary"] }}</p>
+                <p id="profile_paragraph">{{ user_data["profile_info"]["profile_summary"] | safe }}</p>
             </div>
             <!-- work experience section -->
             <hr class="dashed">
