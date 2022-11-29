@@ -7,7 +7,7 @@ application = Flask(__name__)
 @application.route("/")
 def index():
     return render_template("resume.html", website_metadata=website_metadata, user_data=user_data,
-                           footer_data=footer_data, navbar_metadata=navbar_metadata)
+                           navbar_metadata=navbar_metadata)
 
 
 if __name__ == "__main__":
