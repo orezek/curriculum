@@ -149,8 +149,11 @@ background-color: #51557E;
 color: white;
 }
 
+#navbar-text {
+font-size: 30px;
+}
 #aws-logo {
-width: 60px;
+width: 100px;
 }
 
 html {
