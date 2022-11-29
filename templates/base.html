@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+    <link href="{{ url_for('static', filename='assets/favicon.ico') }}" rel="icon" type="image/x-icon">
     <title>
         {% block title %} {% endblock %}
     </title>
@@ -28,7 +28,10 @@
     <div class="row" id="navbar-wrapper">
         <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#"> <!-- Navbar Content--></a>
+                <a class="navbar-brand d-none d-sm-block" target="_blank" href="">OR</a>
+                <a class="navbar-brand" target="_blank" href="{{ navbar_metadata['aws_link'] }}">
+                    <img class="d-none d-sm-block" id="aws-logo"  alt="Powered by AWS Cloud Computing"
+                         src="{{ navbar_metadata['aws_logo'] }}"></a>
             </div>
         </nav>
     </div>

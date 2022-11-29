@@ -17,7 +17,9 @@ name registration. I am also utilising AWS CodePipeline to automate deployment w
 footer_data = {"footer_about_info": footer_about_info}
 
 # text for the navbar
-navbar_metadata = ""
+aws_logo_link = "https://d0.awsstatic.com/logos/powered-by-aws-white.png"
+aws_link = "https://aws.amazon.com/what-is-cloud-computing"
+navbar_metadata = {"aws_logo": aws_logo_link, "aws_link": aws_link}
 
 # USER DATA SECTION
 
@@ -131,6 +133,7 @@ github_link = "https://github.com/orezek/curriculum"
 aws_dev_link = "https://www.credly.com/badges/56210d28-1b2e-4835-acbd-a71978577fb9/public_url"
 aws_arch_link = "https://www.credly.com/badges/e247032c-7f99-45a1-84b4-0a0760de2808/public_url"
 aws_fond_link = "https://www.credly.com/badges/9c64e8d6-4632-41b6-aa12-29c521802fb6/public_url"
+
 
 user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rezek"},
                            "user_bio": {"dob": "02051984", "age": "38", "nationality": "czech",
