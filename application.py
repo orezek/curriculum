@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from data_model import website_metadata, user_data, footer_data, navbar_metadata
+from data_model import website_metadata, user_data, navbar_metadata
 
 application = Flask(__name__)
 
