@@ -51,8 +51,28 @@ skills = {"AWS Cloud": 80,
 # job titles
 job_titles = {"sys_admin": "System Administrator", "it_man": "IT Manager", "net_admin": "Network Administrator"}
 
+# profile_summary_and_basic_info
+profile_summary_data_prod = """I have been in the IT industry for more than a decade and I have spent time in various 
+roles. I started in a support role back in 2008 and progressively moved on to more technically advanced roles before 
+eventually landing in a more managerial position. Over the years, I have acquired "industry standard" skills as I 
+have been exposed to various products from industry household names and infrastructure environments, such as VMware, 
+Veeam, Microsoft, Cisco, Aruba, Ubiquity, Ruckus, Oracle, and other software or hardware products. However, 
+as technology and the approach to IT are evolving, so is my current interest. I have lately been focused on cloud 
+technologies and the modern DevOps and SysOps approach to the IT discipline, particularly with AWS offerings. I am 
+aware that the current trend in IT operations is moving quickly towards automation, and therefore knowing how to work 
+with code is a necessity. Serverless, containers, cloud, CI/CD, and git are not foreign buzzwords to me. That being 
+said, during the last 5 years, I was fortunate to work and live in interesting places and experience firsthand what 
+others might read about in adventure books. On the less bright side, I have been absent from real-life exposure to 
+the DevOps and SysOps world as I was in environments that embraced the "older way of doing" IT. In order to keep my 
+career in touch with current trends and ensure that I have some minimal knowledge, I have recently passed a number of 
+cloud certifications and am working on a few more to solidify my skill set. Recently, I have returned to the EU and I 
+am looking for an opportunity to work on an interesting project, either in a full-time position or as a freelancer. 
+The ideal situation, which I am most interested in, is a company that has already embraced or is in the process of 
+moving towards cloud, automation, DevOps, and SysOps operations and creates an interesting product that I can 
+associate with."""
+
 # profile summary and basic info
-profile_summary_data_prod = """I have been in the IT industry for more than a decade and I had spent time in various 
+profile_summary_data_prod_v0 = """I have been in the IT industry for more than a decade and I had spent time in various 
 roles. I started in a support role back in 2008 and progressively moved on to more technically advanced roles and 
 subsequently landing into more managerial position. During the years, I have acquired “industry standard” skills as I 
 was exposed to various products from the industry household names and infrastructure environments. <kbd>VM 
@@ -133,7 +153,6 @@ github_link = "https://github.com/orezek/curriculum"
 aws_dev_link = "https://www.credly.com/badges/56210d28-1b2e-4835-acbd-a71978577fb9/public_url"
 aws_arch_link = "https://www.credly.com/badges/e247032c-7f99-45a1-84b4-0a0760de2808/public_url"
 aws_fond_link = "https://www.credly.com/badges/9c64e8d6-4632-41b6-aa12-29c521802fb6/public_url"
-
 
 user_data = {"user_info": {"user_full_name": {"name": "Oldrich", "surname": "Rezek"},
                            "user_bio": {"dob": "02051984", "age": "38", "nationality": "czech",
