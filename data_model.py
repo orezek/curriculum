@@ -123,10 +123,17 @@ either in a full-time position or in a freelance role. The ideal that I am most 
 already embraced or is in the process of moving into the cloud, DevOps and SysOps world and creates an interesting 
 product. """
 
-soitron_job_description_data = """Maintaining and supporting IT infrastructure along with other office hardware and fleet of 
+soitron_job_description_data_v1 = """Maintaining and supporting IT infrastructure along with other office hardware and fleet of 
 client computers across several offices in Brussels Belgium. I am part of a two-man team that is hired to completely 
 outsource IT operations for a large international customer. We provide complete service from areas such as 
 consultancy, server and network management and extensive client support."""
+
+soitron_job_description_data = """I am part of a small group of IT professionals responsible for managing and 
+supporting the IT infrastructure, as well as other office hardware and client computers, at multiple offices in 
+Brussels, Belgium. We were hired to fully outsource the IT operations of a large international customer and provide a 
+range of services, including consulting, server and network management, and client support. My duties include 
+ensuring the smooth functioning of IT systems, troubleshooting issues, and collaborating with my colleagues to 
+provide comprehensive support to our clients. """
 
 zuri_job_description_data_v1 = """I was responsible for managing the IT department of a luxurious hotel in Zanzibar, 
 Tanzania. My main duties were to ensure smooth 24/7 IT operations for both internal and external customers, 
