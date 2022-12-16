@@ -165,8 +165,18 @@ smooth operation of the IT systems. Despite the challenges, I was able to consis
 meet the expectations of our clients. If you require further information about my experience and skills, I am happy 
 to provide references upon request."""
 
-olympus_job_description_data = """Responsible for maintaining Microsoft Sharepoint 2013 and 2016 server farm and 
-building business applications and workflows for internal clients. """
+olympus_job_description_data_v1 = """Responsible for maintaining Microsoft Sharepoint 2013 and 2016 server farm and 
+building business applications and workflows for internal clients."""
+
+olympus_job_description_data = """I was responsible for maintaining a Microsoft Sharepoint 2013 and 2016 server farm 
+and building business applications and workflows for internal clients using Nintex workflow software. This position 
+required me to have a strong understanding of Sharepoint and the ability to troubleshoot and resolve issues as they 
+arose. I worked closely with the internal IT team and our clients to ensure that the server farm was running 
+efficiently and that the business applications and workflows, developed using Nintex software, were meeting the needs 
+of the organization. In addition to my technical responsibilities, I also contributed to the development of policies 
+and procedures related to Sharepoint and participated in regular training and professional development activities to 
+stay up-to-date on the latest technology trends and best practices in the field. Overall, my experience at Olympus 
+helped me to build valuable skills in system administration and further my career in the IT industry. """
 
 # links to social media and aws certifications
 linkedin_link = "https://www.linkedin.com/in/oldrich-rezek-175503229/"
