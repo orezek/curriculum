@@ -3,6 +3,9 @@ venv
 .DS_Store
 __pycache__/
 unused-code
+migrations/
+data.sqlite
+static/uploaded_files/
 
 
 # Elastic Beanstalk Files
