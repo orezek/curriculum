@@ -128,7 +128,7 @@ client computers across several offices in Brussels Belgium. I am part of a two-
 outsource IT operations for a large international customer. We provide complete service from areas such as 
 consultancy, server and network management and extensive client support."""
 
-zuri_job_description_data = """I was responsible for managing the IT department of a luxurious hotel in Zanzibar, 
+zuri_job_description_data_v1 = """I was responsible for managing the IT department of a luxurious hotel in Zanzibar, 
 Tanzania. My main duties were to ensure smooth 24/7 IT operations for both internal and external customers, 
 with a strong emphasis on maintaining a tight budget, especially during the pandemic. I led a small team of local 
 personnel and we performed most tasks with excellent results. Due to the nature of the place, 24/7 attention, 
@@ -138,6 +138,17 @@ communicating with government agencies, sourcing and purchasing hardware, and co
 server, network, and application infrastructure. The property was 14 acres in size, with around 220 active access 
 points, over 11km of optical cabling, and over 350 employees, or over 100 high-profile paying clients, just to give 
 you an idea. I am happy to provide references upon request."""
+
+zuri_job_description_data = """I was in charge of managing the IT department at a luxurious hotel located in 
+Zanzibar, Tanzania. My primary responsibilities included ensuring that the IT operations ran smoothly around the 
+clock for both internal and external customers, with a particular focus on sticking to a strict budget during the 
+pandemic. I led a small team of local staff and together, we achieved excellent results in our tasks. Given the 
+nature of the hotel, it was essential to maintain constant vigilance and to execute tasks with a high level of speed 
+and quality. The job was quite varied and required me to handle a range of duties, such as financial planning, 
+hiring, negotiations with vendors, communication with government agencies, sourcing and purchasing hardware, 
+and overseeing the server, network, and application infrastructure of the property, which covered 14 acres and had 
+around 220 active access points, over 11km of optical cabling, and more than 350 employees or 100 high-profile paying 
+clients. I am happy to provide references upon request."""
 
 velaa_job_description_data = """Maintaining and supporting large network, server infrastructure, applications and 
 end-client devices on a secluded private island in the Maldives for top 1% net worth individuals. Very demanding 
