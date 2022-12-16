@@ -150,9 +150,20 @@ and overseeing the server, network, and application infrastructure of the proper
 around 220 active access points, over 11km of optical cabling, and more than 350 employees or 100 high-profile paying 
 clients. I am happy to provide references upon request."""
 
-velaa_job_description_data = """Maintaining and supporting large network, server infrastructure, applications and 
-end-client devices on a secluded private island in the Maldives for top 1% net worth individuals. Very demanding 
-working environment with various tasks and projects usually with fast resolution times. References upon request. """
+velaa_job_description_data_v1 = """I maintained and supported a large network, server infrastructure, applications, 
+and end-client devices on a secluded private island in the Maldives for top 1% net worth individuals. It was a very 
+demanding working environment with various tasks and projects that usually required fast resolution times. I am happy 
+to provide references upon request."""
+
+velaa_job_description_data = """I was responsible for maintaining and supporting the large network, 
+server infrastructure, applications, and end-client devices on a secluded private island in the Maldives, 
+which was used by top 1% net worth individuals. The environment was extremely demanding, requiring me to handle a 
+wide range of tasks and projects with fast resolution times. These duties included monitoring and managing the 
+network and server infrastructure, troubleshooting and resolving issues with applications and end-client devices, 
+implementing security measures to protect against cyber threats, and collaborating with team members to ensure the 
+smooth operation of the IT systems. Despite the challenges, I was able to consistently deliver high-quality work and 
+meet the expectations of our clients. If you require further information about my experience and skills, I am happy 
+to provide references upon request."""
 
 olympus_job_description_data = """Responsible for maintaining Microsoft Sharepoint 2013 and 2016 server farm and 
 building business applications and workflows for internal clients. """
